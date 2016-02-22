@@ -1,0 +1,10 @@
+TEST 1
+
+(a) O arquivo csv não abriu corretamente e não conseguia importar atraves do mysql, pensei em arrumar o arquivo para uma versão valida para importação porem fiz um algoritmo em php para fazer essa importação.
+
+(b) Foi criado um index na coluna de slug para otimizar a busca
+
+CREATE INDEX slug_index
+ON population (slug)
+
+(c) 
