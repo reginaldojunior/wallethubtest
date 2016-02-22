@@ -22,6 +22,7 @@
 <head>
 	<title>AutoComplete Wallet Hub Test</title>
 	
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 </head>
@@ -35,7 +36,6 @@
 					<div class="input-field col s12" style="margin-top:150px;">
 						<input value="" id="input_search" type="text" class="validate">
 						<label class="active" for="input_search">Enter in keys to search</label>
-						<a class="waves-effect waves-light btn-large">Search</a>
 					</div>
 				</div>
 

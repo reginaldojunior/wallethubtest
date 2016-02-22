@@ -39,7 +39,7 @@
 
 		function findCities(term){
 			$.ajax({
-				url: 'http://www.ciawn.com.br/autocomplete.php?querie=' + term,
+				url: 'http://ganhedinheiro.ciawn.com.br/autocomplete.php?querie=' + term,
 				method: 'GET',
 				dataType: 'JSON',
 				success: function(data){
