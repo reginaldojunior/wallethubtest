@@ -66,7 +66,7 @@
 
 		function findCities(term){
 			$.ajax({
-				url: '/autocomplete.php?querie=' + term,
+				url: '/wallethubtest/autocomplete.php?querie=' + term,
 				method: 'GET',
 				dataType: 'JSON',
 				success: function(data){
