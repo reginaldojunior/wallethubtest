@@ -14,7 +14,7 @@ class ImportCSVTest extends \PHPUnit_Framework_TestCase
 
 	public function testImportDataCSV()
 	{
-		// $this->assertEquals(true, $this->importCSVTest->importDataCSV());
+		$this->assertEquals(true, $this->importCSVTest->importDataCSV());
 	}
 
 }

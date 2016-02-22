@@ -1,11 +1,20 @@
 #wallethubtest
 
 
-#How to import data
- - To import date use sudo php -r 'include "CsvImport.php"; CsvImport::run();' on your terminal
+#How to create data in database
 
-#Important
+ - First run sql this repository
+ - Second run composer update to install dependecies
+ - Third run command on your terminal "sudo ./vendor/bin/phpunit tests/ImportCSVTest.php"
 
- - Error when try execute sql to create table but put a primary key in field 'id' and working.
- - File csv with more fields "do que" the base sending mysql
- - 
+#How to test pagination
+
+ - Run command on your terminal "sudo ./vendor/bin/phpunit tests/PaginationTest.php"
+
+#How to install plugin wordpress search
+
+ - Copy file "content-search.php" this repository and paste your theme wordpress
+
+#How to access page autocomplete
+
+ - On your browser http://localhost/wallethubtest/autocomplete.php or http://ganhedinheiro.ciawn.com.br/wallethubtest/autocomplete.php
