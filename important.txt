@@ -7,4 +7,6 @@ TEST 1
 CREATE INDEX slug_index
 ON population (slug)
 
-(c) 
+(c) page html/php create file autocomplete.php
+
+(d) cities more populates
