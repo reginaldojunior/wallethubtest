@@ -49,15 +49,16 @@ class Pagination
 
 	public function getNextPage()
 	{
-		$length = strlen($this->pages);
+		preg_match_all('!\d+!', $this->pages, $matches);		
+		
+		$length = count($matches);
 		
 		$this->nextPage = null;
 
-		for ($i = 0; $i < $length; $i++)
-		{
-			if ((int) $this->pages{$i} != ',' && (int) $this->pages{$i} > $this->currentPage)
+		foreach ($matches[0] as $matche) {
+			if ((int) $matche != ',' && (int) $matche > $this->currentPage)
 			{
-				$this->nextPage = $this->pages{$i};
+				$this->nextPage = $matche;
 				break;
 			}
 		}
@@ -67,15 +68,16 @@ class Pagination
 
 	public function getPrevPage()
 	{
-		$length = strlen($this->pages);
+		preg_match_all('!\d+!', $this->pages, $matches);		
+		
+		$length = count($matches);
 		
 		$this->prevPage = null;
 
-		for ($i = 0; $i < $length; $i++)
-		{
-			if ((int) $this->pages{$i} != ',' && (int) $this->pages{$i} < $this->currentPage)
+		foreach ($matches[0] as $matche) {
+			if ((int) $matche != ',' && (int) $matche < $this->currentPage)
 			{
-				$this->prevPage = $this->pages{$i};
+				$this->prevPage = $matche;
 			}
 		}
 
