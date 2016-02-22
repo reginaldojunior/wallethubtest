@@ -1,5 +1,11 @@
 <?php
 
+/**
+* @author Reginaldo Junior
+* Class test to resolve this problem
+* (a) Use the attached schema to create a new table and fill it with the data from the CSV file
+* (b) Put proper indices on the table for faster query.
+*/
 
 namespace App\Lib;
 
